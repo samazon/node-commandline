@@ -38,6 +38,11 @@ app.get('/about', (req,res) => {
         pageName: 'About Page',
     });
 })
+app.get('/projects', (req,res) => {
+    res.render('projects.hbs', {
+        pageName: 'Projects Page',
+    });
+})
 
 
 app.listen(port, ()=> {
